@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: cursive;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.btn {
+  padding: 15px 40px;
+  border: none;
+  background-color: dodgerblue;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 1s ease;
+}
+
+.btn:active {
+  transform: scale(1.8);
+}
+
+.btn:hover {
+  background-color: red;
+  color: black;
+  font-size: 50px;
+}
+
+.kvadrat {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border-top: 2px solid black;
+  /* background-image: conic-gradient(red, yellow, green); */
+  background-color: white;
+  animation: kvadrat 0.1s linear 0s infinite;
+}
+
+@keyframes kvadrat {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
